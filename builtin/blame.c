@@ -5,7 +5,7 @@
  * See COPYING for licensing conditions
  */
 
-#include "cache.h"
+#include "cache.h"//means include external source file
 #include "config.h"
 #include "color.h"
 #include "builtin.h"
