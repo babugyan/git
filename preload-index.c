@@ -90,9 +90,9 @@ static void *preload_thread(void *_data)
 	return NULL;
 }
 
-static void preload_index(struct index_state *index,
-			  const struct pathspec *pathspec,
-			  unsigned int refresh_flags)
+void preload_index(struct index_state *index,
+		   const struct pathspec *pathspec,
+		   unsigned int refresh_flags)
 {
 	int threads, i, work, offset;
 	struct thread_data data[MAX_PARALLEL];
